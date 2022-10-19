@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People Management</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <!-- <header> -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" style="margin-left: 30px">สำนักงานคอมพิวเตอร์ฯ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">หน้าแรก </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">หน้าสอง</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">การจัดการข้อมูล</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <main class="mt-5">
+    <!-- breadcrumb -->
+    <section class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            การจัดการข้อมูล
+          </li>
+        </ol>
+      </nav>
+    </section>
+    <!-- table management -->
+    <section class="container">
+      <!-- alert -->
+      <div class="alert alert-success">
+        <span class="fw-bold fs-5">สำเร็จ!</span>
+        ข้อมูลได้ถูกบันทึกเรียบร้อยแล้ว
+      </div>
+      <!-- button group -->
+      <h1 class="text-lg-start mb-4">การจัดการบุคลากร</h1>
+      <div class="row">
+        <div class="col-lg-5 text-lg-start mb-3">
+          <button class="btn btn-success">อนุมัติ</button>
+          <button class="btn btn-danger">ไม่อนุมัติ</button>
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Action
+            </button>
+            <ol class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">เรียกดู</a></li>
+              <li><a href="#" class="dropdown-item">แก้ไข</a></li>
+              <li><a href="#" class="dropdown-item">ลบ</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-3">
+          <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="ค้นหา..." />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-12">
+          <!-- table -->
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <caption>จำนวนบุคลากรทั้งหมด 5000 คน</caption>
+              <thead class="table-secondary">
+                <tr>
+                  <th>#</th>
+                  <th>รูปประจำตัว</th>
+                  <th>ชื่อ</th>
+                  <th>นามสกุล</th>
+                  <th>อีเมลล์</th>
+                  <th>action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-center"><input type="checkbox"></th>
+                  <td class="text-center"><img src="#"></td>
+                  <td>นวพรรษ</td>
+                  <td>ทองพิทักษ์</td>
+                  <td>nawapat_link@hotmail.com</td>
+                  <td>
+                    <div class="btn-group">
+                      <button class="btn btn-info"><i class="bi bi-eye"></i> เรียกดู</button>
+                      <button class="btn btn-success"><i class="bi bi-pencil"></i> แก้ไข</button>
+                      <button class="btn btn-danger"><i class="bi bi-trash3"></i> ลบ</button>
+                    </div>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center"><input type="checkbox"></th>
+                  <td class="text-center"><img src="#"></td>
+                  <td>พงศ์กฤต</td>
+                  <td>ยิ่งยงธนสาร</td>
+                  <td>pongkit.kim@hotmail.com</td>
+                  <td>
+                    <div class="btn-group">
+                      <button class="btn btn-info"><i class="bi bi-eye"></i> เรียกดู</button>
+                      <button class="btn btn-success"><i class="bi bi-pencil"></i> แก้ไข</button>
+                      <button class="btn btn-danger"><i class="bi bi-trash3"></i> ลบ</button>
+                    </div>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center"><input type="checkbox"></th>
+                  <td class="text-center"><img src="#"></td>
+                  <td>ทอง</td>
+                  <td>ม่วงใหม่</td>
+                  <td>tongza555@hotmail.com</td>
+                  <td>
+                    <div class="btn-group">
+                      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#view-modal"><i
+                          class="bi bi-eye"></i> เรียกดู</button>
+                      <button class="btn btn-success"><i class="bi bi-pencil"></i> แก้ไข</button>
+                      <button class="btn btn-danger"><i class="bi bi-trash3"></i> ลบ</button>
+                    </div>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center"><input type="checkbox"></th>
+                  <td class="text-center"><img src="#"></td>
+                  <td>ซาร์น่า <span class="badge bg-danger">ออกจากราชการ</span></td>
+                  <td>มณีวงศ์</td>
+                  <td>zarnaa.mm@hotmail.com</td>
+                  <td>
+                    <div class="btn-group">
+                      <button class="btn btn-info"><i class="bi bi-eye"></i> เรียกดู</button>
+                      <button class="btn btn-success"><i class="bi bi-pencil"></i> แก้ไข</button>
+                      <button class="btn btn-danger"><i class="bi bi-trash3"></i> ลบ</button>
+                    </div>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- pagination -->
+          <div>
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+              <li class="page-item"><a href="#" class="page-link">1</a></li>
+              <li class="page-item"><a href="#" class="page-link">2</a></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section class="container">
+      <form class="m-3">
+        <div class="row">
+          <h3>เพิ่มบุคลากร</h3>
+          <div class="col-md-6">
+            <div class="md-3">
+              <label for="code" class="form-label mb-1">รหัสประจำตัว</label>
+              <input type="text" class="form-control" value="197314556" placeholder="รหัสประจำตัว" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="name" class="form-label mb-1">ชื่อ</label>
+              <input type="text" class="form-control" placeholder="ชื่อ">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="mb-3">
+              <label for="address1" class="form-label mb-1">ที่อยู่</label>
+              <input type="text" class="form-control" placeholder="ที่อยู่">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="district" class="form-label mb-1">อำเภอ</label>
+              <input type="text" class="form-control" placeholder="อำเภอ">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="province" class="form-label mb-1">จังหวัด</label>
+              <input type="text" class="form-control" placeholder="จังหวัด">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="address2" class="form-label mb-1">รหัสไปรษณีย์</label>
+              <input type="text" class="form-control" placeholder="ตัวเลข 5 หลัก">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="tel" class="form-label mb-1">เบอร์ติดต่อ</label>
+              <input type="text" class="form-control" placeholder="xxx-xxxxxxxx">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="picture" class="form-label mb-1">รูปถ่าย</label>
+            <input type="file" class="form-control mb-3">
+            <button class="btn btn-primary">บันทึกข้อมูล</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- modal -->
+    <div class="modal fade" id="view-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5">ประวัติ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="card">
+              <div class="card-body">
+                <img src="paytong.jpg" class="card-img-top mb-3">
+                <P class="h5">ทอง ม่วงใหม่</P>
+                <p>นักบิดเพื่อนตัวยงจนได้รับฉายาว่าจอมบิด! ปัจจุบันอายุ 22 ปี</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-light">
+    <div class="d-flex flex-wrap bg-dark p-2 py-5 justify-content-center">
+      <a href="#" class="p-2 text-white">หน้าแรก</a>
+      <a href="#" class="p-2 text-white">เกี่ยวกับเรา</a>
+      <a href="#" class="p-2 text-white">การจัดการข้อมูล</a>
+      <a href="#" class="p-2 text-white">ข้อมูลส่วนตัว</a>
+      <a href="#" class="p-2 text-white">ข้อมูลที่เกี่ยวข้อง</a>
+      <a href="#" class="p-2 text-white">ติดต่อเรา</a>      
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- java -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
